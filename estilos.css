@@ -48,6 +48,6 @@ main{
     padding: 10px;
     width: 60%;
 }
-#yes, #no{
+#yes, #no, #piedra, #papel, #tijera{
     cursor: pointer;
 }

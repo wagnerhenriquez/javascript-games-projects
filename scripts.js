@@ -50,9 +50,47 @@ rock.addEventListener('click', () => {
         else if (jugador2 === 'rock') {
             empate++
             empates.textContent = empate
+            scissors.innerHTML = `<img src="img/rock.png">`
+            paper.innerHTML = `<img src="img/vs.png">`
+            playOneMore.innerHTML = `Play again?`
+            si.innerHTML = '<p>Yes</p>'
+            si.addEventListener('click', () => {
+                paper.innerHTML = `<img src="img/paper.png">`
+                scissors.innerHTML = `<img src="img/scissors.png">`
+                playOneMore.innerHTML = `Choose your hand!`
+                si.innerHTML = ''
+                nope.innerHTML = ''
+            })
+            nope.innerHTML = '<p>No</p>'
+            nope.addEventListener('click', () => {
+                paper.innerHTML = `<img src="img/paper.png">`
+                scissors.innerHTML = `<img src="img/scissors.png">`
+                playOneMore.innerHTML = `Thank you for playing!`
+                si.innerHTML = ''
+                nope.innerHTML = ''
+            })
         } else {
             derrota++
             derrotas.textContent = derrota
+            scissors.innerHTML = `<img src="img/paper.png">`
+            paper.innerHTML = `<img src="img/vs.png">`
+            playOneMore.innerHTML = `Play again?`
+            si.innerHTML = '<p>Yes</p>'
+            si.addEventListener('click', () => {
+                paper.innerHTML = `<img src="img/paper.png">`
+                scissors.innerHTML = `<img src="img/scissors.png">`
+                playOneMore.innerHTML = `Choose your hand!`
+                si.innerHTML = ''
+                nope.innerHTML = ''
+            })
+            nope.innerHTML = '<p>No</p>'
+            nope.addEventListener('click', () => {
+                paper.innerHTML = `<img src="img/paper.png">`
+                scissors.innerHTML = `<img src="img/scissors.png">`
+                playOneMore.innerHTML = `Thank you for playing!`
+                si.innerHTML = ''
+                nope.innerHTML = ''
+            })
         }
     } play()
 })
@@ -76,6 +114,7 @@ paper.addEventListener('click', () => {
             victorias.textContent = victorias1
             rock.innerHTML = `<img src="img/paper.png">`
             paper.innerHTML = `<img src="img/vs.png">`
+            scissors.innerHTML =`<img src="img/rock.png">`
             playOneMore.innerHTML = `Play again?`
             si.innerHTML = '<p>Yes</p>'
             si.addEventListener('click', () => {
@@ -97,9 +136,53 @@ paper.addEventListener('click', () => {
         else if (jugador2 === 'paper') {
             empate++
             empates.textContent = empate
+            rock.innerHTML = `<img src="img/paper.png">`
+            paper.innerHTML = `<img src="img/vs.png">`
+            scissors.innerHTML = `<img src="img/paper.png">`
+            playOneMore.innerHTML = `Play again?`
+            si.innerHTML = '<p>Yes</p>'
+            si.addEventListener('click', () => {
+                rock.innerHTML = `<img src="img/rock.png">`
+                paper.innerHTML = `<img src="img/paper.png">`
+                scissors.innerHTML = `<img src="img/scissors.png">`
+                playOneMore.innerHTML = `Choose your hand!`
+                si.innerHTML = ''
+                nope.innerHTML = ''
+            })
+            nope.innerHTML = '<p>No</p>'
+            nope.addEventListener('click', () => {
+                rock.innerHTML = `<img src="img/rock.png">`
+                paper.innerHTML = `<img src="img/paper.png">`
+                scissors.innerHTML = `<img src="img/scissors.png">`
+                playOneMore.innerHTML = `Thank you for playing!`
+                si.innerHTML = ''
+                nope.innerHTML = ''
+            })
         } else {
             derrota++
             derrotas.textContent = derrota
+            rock.innerHTML = `<img src="img/paper.png">`
+            paper.innerHTML = `<img src="img/vs.png">`
+            scissors.innerHTML = `<img src="img/scissors.png">`
+            playOneMore.innerHTML = `Play again?`
+            si.innerHTML = '<p>Yes</p>'
+            si.addEventListener('click', () => {
+                rock.innerHTML = `<img src="img/rock.png">`
+                paper.innerHTML = `<img src="img/paper.png">`
+                scissors.innerHTML = `<img src="img/scissors.png">`
+                playOneMore.innerHTML = `Choose your hand!`
+                si.innerHTML = ''
+                nope.innerHTML = ''
+            })
+            nope.innerHTML = '<p>No</p>'
+            nope.addEventListener('click', () => {
+                rock.innerHTML = `<img src="img/rock.png">`
+                paper.innerHTML = `<img src="img/paper.png">`
+                scissors.innerHTML = `<img src="img/scissors.png">`
+                playOneMore.innerHTML = `Thank you for playing!`
+                si.innerHTML = ''
+                nope.innerHTML = ''
+            })
         }
     } play()
 })
@@ -144,12 +227,56 @@ scissors.addEventListener('click', () => {
                 nope.innerHTML = ''
             })
         }
-        else if (jugador2 === 'paper') {
+        else if (jugador2 === 'scissors') {
             empate++
             empates.textContent = empate
+            rock.innerHTML = `<img src="img/scissors.png">`
+            paper.innerHTML = `<img src="img/vs.png">`
+            scissors.innerHTML = `<img src="img/scissors.png">`
+            playOneMore.innerHTML = `Play again?`
+            si.innerHTML = '<p>Yes</p>'
+            si.addEventListener('click', () => {
+                rock.innerHTML = `<img src="img/rock.png">`
+                paper.innerHTML = `<img src="img/paper.png">`
+                scissors.innerHTML = `<img src="img/scissors.png">`
+                playOneMore.innerHTML = `Choose your hand!`
+                si.innerHTML = ''
+                nope.innerHTML = ''
+            })
+            nope.innerHTML = '<p>No</p>'
+            nope.addEventListener('click', () => {
+                rock.innerHTML = `<img src="img/rock.png">`
+                paper.innerHTML = `<img src="img/paper.png">`
+                scissors.innerHTML = `<img src="img/scissors.png">`
+                playOneMore.innerHTML = `Thank you for playing!`
+                si.innerHTML = ''
+                nope.innerHTML = ''
+            })
         } else {
             derrota++
             derrotas.textContent = derrota
+            rock.innerHTML = `<img src="img/scissors.png">`
+            paper.innerHTML = `<img src="img/vs.png">`
+            scissors.innerHTML = `<img src="img/rock.png">`
+            playOneMore.innerHTML = `Play again?`
+            si.innerHTML = '<p>Yes</p>'
+            si.addEventListener('click', () => {
+                rock.innerHTML = `<img src="img/rock.png">`
+                paper.innerHTML = `<img src="img/paper.png">`
+                scissors.innerHTML = `<img src="img/scissors.png">`
+                playOneMore.innerHTML = `Choose your hand!`
+                si.innerHTML = ''
+                nope.innerHTML = ''
+            })
+            nope.innerHTML = '<p>No</p>'
+            nope.addEventListener('click', () => {
+                rock.innerHTML = `<img src="img/rock.png">`
+                paper.innerHTML = `<img src="img/paper.png">`
+                scissors.innerHTML = `<img src="img/scissors.png">`
+                playOneMore.innerHTML = `Thank you for playing!`
+                si.innerHTML = ''
+                nope.innerHTML = ''
+            })
         }
     } play()
 })
